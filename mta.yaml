@@ -84,21 +84,7 @@ modules:
       - comsapbpBusinessPartnersv1.zip
       name: comsapbpBusinessPartnersv1
       target-path: resources/
-    - artifacts:
-      - project1.zip
-      name: project1
-      target-path: resources/
 - name: comsapbpBusinessPartners
-  type: html5
-  path: app/BusinessPartners
-  build-parameters:
-    build-result: dist
-    builder: custom
-    commands:
-    - npm install
-    - npm run build
-    supported-platforms: []
-- name: comsapbpBusinessPartnersv1
   type: html5
   path: app/BusinessPartners
   build-parameters:
@@ -108,9 +94,9 @@ modules:
     - npm install
     - npm run build:cf
     supported-platforms: []
-- name: project1
+- name: comsapbpBusinessPartnersv1
   type: html5
-  path: app/project1
+  path: app/BusinessPartners
   build-parameters:
     build-result: dist
     builder: custom
