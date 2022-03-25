@@ -19,9 +19,12 @@
     },
     "scripts": {
         "start": "npx cds run",
-        "test": "mocha tests/chai-test.js --timeout 15000 --exit"
+        "test": "mocha tests/chai-test.js --timeout 15000 --exit",
+        "watch-project1": "cds watch --open project1/webapp/index.html#fe-lrop-v4",
+        "undeploy": "cf undeploy BusinessPartnerValidation --delete-services --delete-service-keys"
     },
     "devDependencies": {
+        "@sap/ux-specification": "^1.96.6",
         "axios": "^0.21.1",
         "chai": "^4.3.4",
         "chai-http": "^4.3.0",
